@@ -1,12 +1,185 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700,900&display=swap&subset=cyrillic');
+
+
 body {
+
   padding: 0 140px 0 140px;
+
+  font-family: Rubik;
+  font-style: normal;
+
+}
+
+h1 {
+
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 114px;
+
+
+  padding: 230px 0 100px 0;
+
+  color: #000000;
+
+}
+
+.topText {
+  letter-spacing: 0.10em;
+
+  margin-top: -345px;
+  padding: 0 0 0 10px;
+  z-index: 3;
+}
+
+h2 {
+
+  font-weight: normal;
+  font-size: 28px;
+  letter-spacing: 0.02em;
+  align-items: center;
+
+  color: #000000;
+}
+
+p {
+
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+
+}
+
+/* NAME OF SECTION */
+
+.nameOfSection {
+  width: 100%;
+  padding: 230px 0 230px 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.blockRed {
+  width: 23px;
+  height: 23px;
+
+  margin-right: 22px;
+
+  background: #C24229;
+}
+
+/* HEADER START */
+
+nav {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+ul:first-child {
+  width: 197px;
+  height: 199px;
+
+  margin-right: auto;
+
+  background: #17395C;
+}
+
+ul:first-child a {
+
+  color: #F2F2F2;
+}
+
+ul {
+  width: 197px;
+  height: 199px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+ul:hover {
+
+  background: #EFB758;
+
 }
 
 a {
+
   font-family: Rubik;
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
-  line-height: 36px;
-  text-align: center;
+  text-decoration: none;
+
+  height: auto;
+  width: auto;
+  padding-bottom: 30px;
+
+  color: #000000;
+}
+
+
+a:hover {
+  color: #F2F2F2;
+}
+
+/* HEADER END */
+
+/* MAIN SECTION START */
+
+section {
+  padding-top: 200px;
+}
+
+img {
+  padding: 0 85px 0 85px;
+  z-index: 2;
+}
+
+.block {
+
+  width: 920px;
+  height: 400px;
+
+  margin-top: -315px;
+  z-index: 1;
+
+  background: #EFB758;
+}
+
+.textBlock {
+  padding: 0 85px 0 85px;
+}
+
+/* MAIN SECTION END */
+
+/* SKILLS SECTION START */
+
+.skills {
+      display: grid;
+      justify-content: center;
+      grid: repeat(2, minmax(150px, 300px)) / repeat(3, minmax(300px, 600px));
+      grid-template-rows: minmax(150px, 300px) minmax(150px, 300px);
+      grid-template-columns: minmax(300px, 600px) minmax(300px, 600px) minmax(300px, 600px);
+      grid-template-areas: none;
+      grid-auto-flow: initial;
+      grid-auto-rows: initial;
+      grid-auto-columns: initial;
+      grid-row-gap: 20rem;
+}
+
+.blockSkills {
+  width: 373px;
+  height: 298px;
+
+  background: #C4C4C4;
 }
