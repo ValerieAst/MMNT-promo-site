@@ -9,12 +9,15 @@ body {
   font-family: Rubik;
   font-style: normal;
 
+  display: flex;
+  justify-content: center;
+
 }
 
 h1 {
 
   font-weight: bold;
-  font-size: 96px;
+  font-size: 6.000em;
   line-height: 114px;
 
 
@@ -45,7 +48,7 @@ h2 {
 p {
 
   font-weight: normal;
-  font-size: 36px;
+  font-size: 2.250em;
   line-height: 150%;
   letter-spacing: 0.05em;
 
@@ -141,7 +144,7 @@ section {
 }
 
 img {
-  padding: 0 85px 0 85px;
+  padding: 0 5.313em 0 5.313em;
   z-index: 2;
 }
 
@@ -157,7 +160,7 @@ img {
 }
 
 .textBlock {
-  padding: 0 85px 0 85px;
+  padding: 0 5.313em 0 5.313em;
 }
 
 /* MAIN SECTION END */
@@ -182,4 +185,30 @@ img {
   height: 298px;
 
   background: #C4C4C4;
+}
+
+
+
+
+/* RESPONSIVE RESPONSIVE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .skills {
+    grid: repeat(3, 1fr) / repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: none;
+    grid-auto-flow: initial;
+    grid-auto-rows: initial;
+    grid-auto-columns: initial;
+  }
+
+  h1 {
+    font-size: 4.250em;
+  }
+
+  p {
+    font-size: 1.125em;
+  }
 }
