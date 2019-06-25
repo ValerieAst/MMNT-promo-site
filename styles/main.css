@@ -139,16 +139,16 @@ a:hover {
 
 /* MAIN SECTION START */
 
-section {
+section.main  {
   padding-top: 200px;
 }
 
-img {
+.main img {
   padding: 0 5.313em 0 5.313em;
   z-index: 2;
 }
 
-.block {
+.blockYellow {
 
   width: 920px;
   height: 400px;
@@ -188,8 +188,118 @@ img {
   background: #C4C4C4;
 }
 
+/* SKILLS SECTION END */
+
+/* WORKS SECTION START */
+
+.rowWorks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.blockWorks {
+  padding-top: 200px;
+}
+
+.left {
+  flex-direction: row-reverse;
+}
+
+.right img {
+  padding-left: 10px;
+}
+
+.left img {
+  padding-right: 10px;
+}
+
+.works h3 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 150%;
+  /* or 72px */
+  letter-spacing: 0.05em;
+
+  padding-left: 25%;
+  padding-bottom: 75px;
+
+  color: #000000;
+}
+
+.worksText p {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+
+  padding: 0 20% 0 25%;
+
+  color: #000000;
+
+}
+
+.works h1 {
+  padding-top: 0;
+}
 
 
+.worksText a {
+  text-align: center;
+  align-self: center;
+  padding: 0;
+
+}
+
+.buttonWorks {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+
+  margin: 85px 25% 0 25%;
+
+  background: #EFB758;
+}
+
+/* WORKS SECTION END */
+
+/* GALERY SECTION START */
+
+.galleryGrid {
+  display: grid;
+  grid-template-areas:
+  "leftGrid rightGrid"
+  "botGrid botGrid";
+  grid-template-rows: 994px 477px;
+  grid-template-columns: 373px 766px;
+  grid-gap: 20px;
+
+}
+
+.leftGrid {
+  display: grid;
+  grid-template-areas:
+  "pic1"
+  "pic3";
+  grid-template-columns: 497px 477px;
+  grid-gap: 20px;
+}
+
+.rightGrid {
+  display: grid;
+  grid-template-areas:
+  "pic2"
+  "pic4";
+  grid-template-rows: 597px 377px;
+  grid-gap: 20px;
+}
+
+.botGrid {
+  display: grid;
+  grid-template-areas:
+  "pic5 pic6";
+  grid-template-columns: 590px 548px;
+  grid-gap: 20px;
+}
 
 /* RESPONSIVE RESPONSIVE RESPONSIVE */
 
