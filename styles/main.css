@@ -170,14 +170,15 @@ img {
 .skills {
       display: grid;
       justify-content: center;
-      grid: repeat(2, minmax(150px, 300px)) / repeat(3, minmax(300px, 600px));
-      grid-template-rows: minmax(150px, 300px) minmax(150px, 300px);
-      grid-template-columns: minmax(300px, 600px) minmax(300px, 600px) minmax(300px, 600px);
+      grid: repeat(2, minmax(373px, 298px)) / repeat(3, minmax(373px, 298px));
+      grid-template-rows: minmax(373px, 298px) minmax(373px, 298px);
+      grid-template-columns: minmax(373px, 298px) minmax(373px, 298px) minmax(373px, 298px);
       grid-template-areas: none;
       grid-auto-flow: initial;
       grid-auto-rows: initial;
       grid-auto-columns: initial;
-      grid-row-gap: 20rem;
+      grid-row-gap: 20px;
+      grid-column-gap: 20px;
 }
 
 .blockSkills {
